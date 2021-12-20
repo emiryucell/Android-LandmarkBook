@@ -14,9 +14,9 @@ public class DetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       binding=ActivityDetailsBinding.inflate(getLayoutInflater());
-       View view=binding.getRoot();
-       setContentView(view);
+        binding = ActivityDetailsBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
 
 
     }

@@ -1,6 +1,7 @@
 package com.emirtechs.landmarkbook;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.view.View;
@@ -22,17 +23,32 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
-        landmarkArrayList=new ArrayList<>();
+        landmarkArrayList = new ArrayList<>();
 
-        Landmark pisa=new Landmark("Pisa","Italy",R.drawable.pisa);
-        Landmark eiffel=new Landmark("Eiffel","France",R.drawable.eiffel);
-        Landmark colloseum=new Landmark("Colloseum","Italy",R.drawable.colleseum);
-        Landmark londonBridge=new Landmark("London Bridge","UK",R.drawable.londonbridge);
+        Landmark pisa = new Landmark("Pisa", "Italy", R.drawable.pisa);
+        Landmark eiffel = new Landmark("Eiffel", "France", R.drawable.eiffel);
+        Landmark colloseum = new Landmark("Colloseum", "Italy", R.drawable.colleseum);
+        Landmark londonBridge = new Landmark("London Bridge", "UK", R.drawable.londonbridge);
 
         landmarkArrayList.add(pisa);
         landmarkArrayList.add(eiffel);
         landmarkArrayList.add(colloseum);
         landmarkArrayList.add(londonBridge);
+        landmarkArrayList.add(pisa);
+        landmarkArrayList.add(eiffel);
+        landmarkArrayList.add(pisa);
+        landmarkArrayList.add(eiffel);
+        landmarkArrayList.add(colloseum);
+        landmarkArrayList.add(londonBridge);
+        landmarkArrayList.add(pisa);
+        landmarkArrayList.add(eiffel);
+        landmarkArrayList.add(colloseum);
+        landmarkArrayList.add(londonBridge);
+
+
+        binding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LandmarkAdapter landmarkAdapter = new LandmarkAdapter(landmarkArrayList);
+        binding.recyclerView.setAdapter(landmarkAdapter);
 
     }
 }

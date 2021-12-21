@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="#EAB676"
     tools:context=".DetailsActivity">
 
     <ImageView
@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:background="#AA6633"/>
 
     <TextView
         android:id="@+id/nameText"
@@ -26,7 +27,7 @@
         android:layout_marginBottom="30dp"
         android:text="Name"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
+        android:textColor="#AA6633"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/countryText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +42,7 @@
         android:layout_marginBottom="200dp"
         android:text="Country"
         android:textAlignment="center"
-        android:textColor="@color/purple_700"
+        android:textColor="#AA6633"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
